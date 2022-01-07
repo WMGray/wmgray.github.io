@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://wmgray.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jan 2022 15:04:51 +0800</lastBuildDate><atom:link href="https://wmgray.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>判断有向图中两个结点是否可达</title>
+      <link>https://wmgray.github.io/post/blog/</link>
+      <pubDate>Fri, 07 Jan 2022 15:04:51 +0800</pubDate>
+      
+      <guid>https://wmgray.github.io/post/blog/</guid>
+      <description>邻接表结构 #define MaxVertexNum 100 //结点数目最大值 //邻接表 typedef struct ArcNode //边表结点 { int adjvex; //弧指向的顶点位置(顶点表结点数组下标)  struct ArcNode *next; //指向下一条弧的指针 }ArcNode; typedef struct Vnode //顶点表结点 { int data; //顶点标识  ArcNode *first; //指向第一条依附该顶点的弧的指针 }Vnode,AdjList[MaxVertexNum]; typedef struct { AdjList vertices; int vexnum=0,arcnum=0; }ALGraph; 创建邻接表 ALGraph* CreateAG1() { /* 0--&amp;gt;1--&amp;gt;2--&amp;gt;3 0--1 1--2 2--3 */ ALGraph *G = new ALGraph(); G-&amp;gt;vexnum = 4; G-&amp;gt;arcnum = 3; //创建 n 个结点 --顶点表  for(int i=0;i&amp;lt;G-&amp;gt;vexnum;i++) { G-&amp;gt;vertices[i].</description>
+    </item>
+    
+  </channel>
+</rss>
